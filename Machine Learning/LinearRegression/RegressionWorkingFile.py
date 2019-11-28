@@ -41,7 +41,8 @@ for x in range(len(predictions)):
 # matplotlib
 # ggplot is style
 style.use("ggplot")
-pyplot.scatter(data["G1"], data["G3"])
-pyplot.xlabel("G1")
+temp = "G1"
+pyplot.scatter(data[temp], data["G3"])
+pyplot.xlabel(temp)
 pyplot.ylabel("Final Grade")
 pyplot.show()
