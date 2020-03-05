@@ -1,3 +1,4 @@
+import time
 def hanoiTower(disks,source,auxiliary,target):
     if disks == 1:
         print('Move disk 1 from peg {} to peg {}.'.format(source,target))
@@ -7,4 +8,6 @@ def hanoiTower(disks,source,auxiliary,target):
     hanoiTower(disks-1,auxiliary,source,target)
 
 disks = int(input('Enter number of disks: '))
+start_time = time.time()
 hanoiTower(disks,'A','B','C')
+print("--- %.8f seconds ---" % (time.time() - start_time))

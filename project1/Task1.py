@@ -1,9 +1,9 @@
 import random
+import time
 number = int(input("enter the length of list/arry  "))
 randomlist = random.sample(range(0,number*1000),number)
 
 #merge sort
-
 def mergeSort(arr):
     if len(arr)>1:
         mid = len(arr)//2
@@ -21,13 +21,6 @@ def mergeSort(arr):
                 arr[k] = right[j]
                 j+=1
 
-
-def printList(arr):
-    for i in range(len(arr)):
-        print(arr[i],end="")
-    print()
-
-
 #quick sort
 def partition(arr,low,high):
     i = (low-1)
@@ -44,6 +37,6 @@ def quickSort(arr,low,high):
         quickSort(arr,low,pi-1)
         quickSort(arr,pi+1,high)
 #quickSort(randomlist,0,len(randomlist)-1)
-mergeSort(randomlist)
-for i in range(len(randomlist)):
-    print("%d" %randomlist[i]),
+start_time = time.time()
+quickSort(randomlist,0,number-1)
+print("--- %.8f seconds ---" % (time.time() - start_time))
