@@ -1,0 +1,12 @@
+Prettier			# font and format, turn on format on save in setting edit
+Material Theme			# for theme, manage icon bottom left -> color theme -> palenight high constract
+Material icon theme		# for icon theme
+Indent-rainbow			# for indent color
+Bracket Pair Colorizer2		# for matching brackets
+
+
+# for html
+Auto rename tage		# for auto change the remain tag when some tag is changed
+Rest-client			# for testing send post, get request
+css peek			# for navigation between css and html
+html-css support		# create css class or something
